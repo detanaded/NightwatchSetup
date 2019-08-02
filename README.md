@@ -1,5 +1,5 @@
 # Nightwatch Setup
-A simple step-by-step instructions in getting Nightwatch set up.
+A simple step-by-step instructions in getting Nightwatch set up. Ensure you have **Node.js** installed as we will be using npm to install our modules and dependcies.
 
 Nightwatch 1.0 and above no longer requires, nor is it recommended to use Selenium Standalone Server unless you are testing agaisnt legacy browsers, such as Internet Explorer.
 
@@ -11,13 +11,14 @@ Run `npm init -y` as this will create a basic package.json file.
 Under ```"scripts": {
     "test":```    
     Add `"Nightwatch"`
+This will make it so nightwatch is ran using command: `npm test`
 
 
 ## Step 2
 
 Install Nightwatch as a global npm module. `npm i nightwatch -g`(This will make it so you can run Nightwatch in any directory).
 
-Within your newly created directory install your WebDriver dependencies. [Nightwatch.js](https://nightwatchjs.org/gettingstarted#installation) has a great page showcasing all webdrivers and how to install them. For now we'll just use **npm** to install Chrome's WebDriver:
+Within your newly created directory install your WebDriver dependencies. [Nightwatch.js](https://nightwatchjs.org/gettingstarted#installation) has a great page showcasing all webdrivers and how to install them. For now, we'll just use **npm** to install Chrome's WebDriver:
 
 ## ChromeDriver
 ChromeDriver can be downloaded from the [ChromeDriver Downloads](https://chromedriver.chromium.org/downloads) page. Or you can use the chromedriver NPM package as a dependency in your project:
@@ -70,6 +71,9 @@ module.exports = {
   }
 };
 ```
+
+## Step 5
+Now all thats left is to run tests by using command: `npm test` This will runn all tests within the directory. You can specify to run only one test by using: `npm test tests\googleTest.js`
 
 Remember always to call the .end() method when you want to close your test, in order for the browser session to be properly closed.
 
