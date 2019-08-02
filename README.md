@@ -24,7 +24,9 @@ ChromeDriver can be downloaded from the [ChromeDriver Downloads](https://chromed
 `npm i chromedriver`
 
 ## Step 3
-Create a `nightwatch.conf.js` file and insert this block of code: ```{
+Create a `nightwatch.conf.js` file and insert this block of code: 
+```
+{
   "src_folders" : ["tests"],
 
   "webdriver" : {
@@ -40,7 +42,8 @@ Create a `nightwatch.conf.js` file and insert this block of code: ```{
       }
     }
   }
-}```
+}
+```
 
 - `src_folders` indicates where your tests are stored within your directory.
 - `server_path` Is where you're storing ChromeDriver. **Note** If you run into an error ```An error occurred while trying to start ChromeDriver: cannot resolve path: ""```  Check in your `node_modules` folder to see where `chromedriver.exe` is located and update the server path. 
@@ -52,7 +55,8 @@ Using the preferred CSS selector model to locate elements on a page, Nightwach m
 Create a `tests` folder. Within `tests` create a .js file(This is to test to make sure everything is set up correctly and working. For now, name it `googleTest.js`).
 Insert block of code to `googleTest.js`:
 
-```module.exports = {
+```
+module.exports = {
   'Demo test Google' : function (browser) {
     browser
       .url('https://www.google.com')
@@ -64,7 +68,8 @@ Insert block of code to `googleTest.js`:
       .assert.containsText('#main', 'Night Watch')
       .end();
   }
-};```
+};
+```
 
 Remember always to call the .end() method when you want to close your test, in order for the browser session to be properly closed.
 
