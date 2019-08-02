@@ -19,7 +19,7 @@ Install Nightwatch as a global npm module. `npm i nightwatch -g`(This will make 
 
 Within your newly created directory install your WebDriver dependencies. [Nightwatch.js](https://nightwatchjs.org/gettingstarted#installation) has a great page showcasing all webdrivers and how to install them. For now we'll just use **npm** to install Chrome's WebDriver:
 
-##ChromeDriver
+## ChromeDriver
 ChromeDriver can be downloaded from the [ChromeDriver Downloads](https://chromedriver.chromium.org/downloads) page. Or you can use the chromedriver NPM package as a dependency in your project:
 `npm i chromedriver`
 
