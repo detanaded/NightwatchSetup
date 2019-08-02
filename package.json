@@ -1,0 +1,24 @@
+{
+  "name": "NightwatchSetup",
+  "version": "1.0.0",
+  "description": "A simple step-by-step instructions in getting Nightwatch set up.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/detanaded/NightwatchSetup.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/detanaded/NightwatchSetup/issues"
+  },
+  "homepage": "https://github.com/detanaded/NightwatchSetup#readme",
+  "dependencies": {
+    "chromedriver": "^76.0.0",
+    "nightwatch": "^1.1.13"
+  }
+}
