@@ -73,8 +73,8 @@ module.exports = {
 ```
 
 ## Step 5
-Now all thats left is to run tests by using command: `npm test` This will runn all tests within the directory. You can specify to run only one test by using: `npm test tests\googleTest.js`
+Now all thats left is to run tests by using command: `npm test` This will run all tests within the directory. You can specify to run only one test by using: `npm test tests\googleTest.js`
 
-Remember always to call the .end() method when you want to close your test, in order for the browser session to be properly closed.
+Remember **always** to call the .end() method when you want to close your test, in order for the browser session to be properly closed.
 
 Thats it!
